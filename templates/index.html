@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>順運工程 - 登入</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
         <header class="header">
             <div class="logo-section">
-                <img src="assets/logo.svg" alt="Logo" class="logo">
+                <img src="{{ url_for('static', filename='assets/logo.svg') }}" alt="Logo" class="logo">
                 <h1>順運工程</h1>
             </div>
         </header>
@@ -27,6 +27,6 @@
             </div>
         </main>
     </div>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
